@@ -6,7 +6,7 @@ trans_complete: true
 toc: false
 keywords: LoopBack 3.0
 tags: [시작하기]
-sidebar: lb3_sidebar
+sidebar: ko_lb3_sidebar
 permalink: /doc/ko/lb3/index.html
 summary: LoopBack 3.0이 현재 릴리즈 입니다.
 ---
