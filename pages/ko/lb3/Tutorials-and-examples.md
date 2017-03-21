@@ -56,7 +56,7 @@ redirect_from:
       <td><a href="https://github.com/strongloop/loopback-example-app-logic" class="external-link">
       loopback-example-app-logic</a>
       </td>
-      <td>How to add your own logic to a LoopBack app.</td>
+      <td>자신의 로직을 LoopBack 앱에 추가하는 방법</td>
     </tr>
     <tr>
       <td>6</td>
