@@ -5,7 +5,7 @@ trans_complete: true
 lang: ko
 keywords: LoopBack
 tags: [설치하기]
-sidebar: lb3_sidebar
+sidebar: ko_lb3_sidebar
 permalink: /doc/ko/lb3/Installation.html
 summary: LoopBack CLI 도구를 설치하여 LoopBack 3.0 응용프로그램을 생성하고 개발하십시오.
 ---
