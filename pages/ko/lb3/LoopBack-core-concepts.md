@@ -1,11 +1,11 @@
 ---
-title: "LoopBack core concepts"
-lang: en
+title: "LoopBack 핵심 컨셉"
+lang: ko
 layout: page
 keywords: LoopBack
 tags:
-sidebar: lb3_sidebar
-permalink: /doc/en/lb3/LoopBack-core-concepts.html
+sidebar: ko_lb3_sidebar
+permalink: /doc/ko/lb3/LoopBack-core-concepts.html
 summary: An introduction to the most important concepts needed to understand LoopBack.
 ---
 
@@ -16,9 +16,9 @@ summary: An introduction to the most important concepts needed to understand Loo
 {% include image.html file="9830550.png" alt="Model inheritance diagram" caption="Model inheritance" max-width="400"%}
 </div>
 
-## Models
+## 모델 
 
-_Models_ are at the heart of LoopBack, and represent back-end data sources such as databases or other back end services (REST, SOAP, and so on).
+_모델_ 은 LoopBack의 중심이며, and represent back-end data sources such as databases or other back end services (REST, SOAP, and so on).
 LoopBack models are JavaScript objects with both Node and REST APIs.
 
 **A key powerful feature of LoopBack is that when you define a model it automatically comes with a predefined REST API
@@ -29,12 +29,12 @@ Other model objects all "inherit from" it. Models have an inheritance hierarchy,
 When you attach a model to a persistent data source it becomes a [connected model](Connected-model-object.html) with create, retrieve, update, and delete operations.
 LoopBack's built-in models inherit from it.
 
-### Built-in models
+### 내장 모델 
 
 Every LoopBack application has a set of predefined 
 [built-in models](Using-built-in-models.html) such as User, Role, and Application, so you don't have to create these common models from scratch.
 
-### Custom models
+### 사용자 정의 모델
 
 You can [define your own custom models](Creating-models.html) specific to your application. 
 You can make your custom models [extend built-in models](Extending-built-in-models.html) to build on the predefined functionality of
@@ -63,14 +63,14 @@ whether LoopBack automatically adds a unique `id` property to a model. For a m
 See [ID properties](Model-definition-JSON-file.html#id-properties) for more information.
 " %}
 
-### Model relations
+### 모델 릴레이션
 
 You can express [relationships between models](Creating-model-relations.html), such as 
 [BelongsTo](BelongsTo-relations.html), 
 [HasMany](HasMany-relations.html), and 
 [HasAndBelongsToMany](HasAndBelongsToMany-relations.html). 
 
-### Model create, retrieve, update, and delete operations
+### 모델 생성, 검색, 업데이트, 삭제 연산
 
 When you connect a model to a persistent data source such as a database, it becomes a _[connected model](Connected-model-object.html)_ 
 with a full set of create, read, update, and delete operations from the [PersistedModel](http://apidocs.strongloop.com/loopback/#persistedmodel) class:
@@ -120,7 +120,7 @@ with a full set of create, read, update, and delete operations from the [Persi
 
 See [PersistedModel API documentation](http://apidocs.strongloop.com/loopback/#persistedmodel) for more information.
 
-## Application logic
+## 어플리케이션 로직
 
 You can add custom application logic in several ways; you can:
 
@@ -132,7 +132,7 @@ You can add custom application logic in several ways; you can:
 
 You can add code to [validate data](Validating-model-data.html) before saving it to the model and back-end data store.
 
-### Middleware phases
+### 미들웨어 단계
 
 _Middleware_ refers to functions executed when HTTP requests are made to REST endpoints. Since LoopBack is based on [Express](http://expressjs.com/),
 LoopBack middleware is the same as [Express middleware](http://expressjs.com/en/guide/using-middleware.html).
@@ -141,18 +141,17 @@ Using phases helps to avoid ordering issues that can occur with standard Express
 
 See [Defining middleware](Defining-middleware.html) for more information.
 
-## Data sources and connectors
+## 데이터 소스와 커넥터
 
 {% include image.html file="9830484.png" alt="" %}
 
 LoopBack generalizes backend services such as databases, REST APIs, SOAP web services, and storage services as _data sources_.
-
 Data sources are backed by _connectors_ that then communicate directly with the database or other back-end service.
 Applications don't use connectors directly, rather they go through data sources using the 
 [DataSource](https://apidocs.strongloop.com/loopback-datasource-juggler/#datasource) and 
 [PersistedModel](http://apidocs.strongloop.com/loopback/#persistedmodel) APIs.
 
-## LoopBack components
+## LoopBack 컴포넌트 
 
 LoopBack components provide additional "plug-in" functionality:
 
